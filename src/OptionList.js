@@ -1,5 +1,6 @@
 import Option from "./Option";
 import SubOption from "./SubOption";
+import OptionAndSubOptionContainer from "./OptionAndSubOptionContainer.js";
 import { optionData } from "./config.js";
 /*
 export default function OptionList() {
@@ -18,12 +19,12 @@ export default function OptionList() {
 export default function OptionList() {
   return (
     <div className="option-list">
-      <Option />
-      <Option />
-      <Option />
-      <Option />
-      <Option />
-      <Option />
+      <OptionAndSubOptionContainer />
+      <OptionAndSubOptionContainer />
+      <OptionAndSubOptionContainer />
+      <OptionAndSubOptionContainer />
+      <OptionAndSubOptionContainer />
+      <OptionAndSubOptionContainer />
     </div>
   );
 }

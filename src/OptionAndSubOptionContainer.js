@@ -1,15 +1,17 @@
+import { useState } from "react";
+import Option from "./Option";
+import SubOptionContainer from "./SubOptionContainer";
+
 export default function OptionAndSubOptionContainer() {
   const [display, setDisplay] = useState(false);
   return (
     <div>
-      <div className="option" onClick={(e) => setDisplay(!display)}></div>
-      <div
-        className={`sub-options-container ${display ? "hidden-element" : ""}`}
-      >
-        <SubOption />
-        <SubOption />
-        <SubOption />
-      </div>
+      <Option display={display} setDisplay={setDisplay} />
+      <SubOptionContainer
+        display={display}
+        setDisplay={setDisplay}
+        className="sub-options-container"
+      />
     </div>
   );
 }

@@ -15,18 +15,6 @@ export default function Option({ optionObject }) {
   );
 }
 */
-export default function Option() {
-  const [display, setDisplay] = useState(false);
-  return (
-    <div>
-      <div className="option" onClick={(e) => setDisplay(!display)}></div>
-      <div
-        className={`sub-options-container ${display ? "hidden-element" : ""}`}
-      >
-        <SubOption />
-        <SubOption />
-        <SubOption />
-      </div>
-    </div>
-  );
+export default function Option({ display, setDisplay }) {
+  return <div className="option" onClick={(e) => setDisplay(!display)}></div>;
 }
