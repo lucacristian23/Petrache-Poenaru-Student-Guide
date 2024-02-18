@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.option img {
+  border: 2px solid red;
+  box-sizing: border-box;
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.test {
+  display: block;
+  position: absolute; /* Poziționează imaginea absolut în interiorul containerului */
+  top: 150; /* Plasează imaginea la partea de sus a containerului */
+  left: 50%; /* Mută imaginea pe orizontală la jumătatea containerului */
+  transform: translateX(-50%); /* Centrează imaginea pe orizontală */
+}
+.option-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh; /* Adjust the gap between Option components */
+  border: 0.25vh solid #ccc; /* Add border with a color of your choice */
+  padding: 2vh; /* Add padding to create space between border and content */
+}
+
+.option {
+  position: relative; /* Position the option container relative */
+  border: 0.25vh solid #ff6347; /* Coral border color */
+  padding: 1.5vh; /* Add padding to create space between border and content */
+  height: 4vh;
+  justify-content: space-between; /* Align content evenly along the main axis */
+  border-radius: 16px; /* Make the borders slightly rounded */
+}
+
+.subOption {
+  position: relative; /* Position the option container relative */
+  border: 0.25vh solid #ff6347; /* Coral border color */
+  padding: 0vh; /* Add padding to create space between border and content */
+  height: 2vh;
+  margin-left: 0; /* Align the subOptions to the absolute left margin */
+}
+
+.sub-options-container {
+  display: flex;
+  position: relative; /* Position the container relative to its parent option */
+  width: 70%; /* Make the container full width */
+
+  border-radius: 4px; /* Make the borders slightly rounded */
+  border: 0.25vh solid #33209e; /* Coral border color */
+  margin-top: 0; /* Adjust the margin-top to create space between options */
+
+  flex-direction: column;
+  gap: 0vh; /* Adjust the gap between Option components */
+}
+
+.hidden-element {
+  display: none;
+}
