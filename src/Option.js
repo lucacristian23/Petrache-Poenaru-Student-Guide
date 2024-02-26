@@ -15,6 +15,31 @@ export default function Option({ optionObject }) {
   );
 }
 */
-export default function Option({ display, setDisplay }) {
-  return <div className="option" onClick={(e) => setDisplay(!display)}></div>;
+export default function Option({ display, setDisplay, infoObj }) {
+  return (
+    <div className="option" onClick={(e) => setDisplay(!display)}>
+      <img
+        src="/test1.jpg"
+        alt=""
+        style={{
+          width: "auto",
+          height: "100%",
+          aspectRatio: "4 / 2.6",
+          borderTopLeftRadius: "16px",
+          borderBottomLeftRadius: "16px",
+          overflow: "hidden",
+          border: "2px solid #204060",
+        }}
+      />
+      <div className="textContainer">
+        <h5 className="optionTitle">{infoObj.title}</h5>
+        <p className="optionDescription">{infoObj.description}</p>
+      </div>
+    </div>
+  );
 }
+/*
+<img src="/HAI.png" alt="da" />
+<img src="/test.png" alt="da" />
+<img src="/test1.jpg" alt="da" />
+*/
