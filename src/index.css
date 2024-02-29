@@ -19,6 +19,50 @@ code {
   margin-bottom: 20px;
 }
 
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Ensure the container takes up the full height of the viewport */
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure the header appears above other content */
+  background-color: #1f2d4d;
+}
+
+.headerTitle {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  position: relative; /* Ensure positioning context for pseudo-elements */
+  padding-top: 1vh; /* Adjust top padding to create space for the line */
+  padding-bottom: 1vh; /* Adjust bottom padding to create space for the line */
+  /*  font-family: 'Lato', sans-serif; 
+  font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+   */
+}
+
+.headerTitle::before,
+.headerTitle::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #ffffff; /* Line color */
+}
+
+.headerTitle::before {
+  top: 0; /* Position line above text */
+}
+
+.headerTitle::after {
+  bottom: 0; /* Position line below text */
+}
+
 .test {
   display: block;
   position: absolute; /* Poziționează imaginea absolut în interiorul containerului */
@@ -38,7 +82,7 @@ code {
   position: relative; /* Position the option container relative */
   border: 0.25vh solid /*#144072*/ #11304a; /* Coral border color */
   padding: 0vh; /* Add padding to create space between border and content */
-  height: 2vh;
+  height: 2.7vh;
   margin-left: 0; /* Align the subOptions to the absolute left margin */
   border-radius: 16px;
   background-color:/* #1e3350 */ #1f3451;
@@ -98,17 +142,87 @@ code {
 }
 
 .optionDescription {
-  top: 0.4vh; /* Adjust the top position to lift up the description */
+  top: 0.3vh; /* Adjust the top position to lift up the description */
   font-size: 1vh;
+  line-height: 1.2;
 }
 
 .subOptionTitle {
   margin: 0;
   color: white;
-  font-size: 1vh;
+  font-size: 1.035vh;
   position: relative; /* Position both the title and description relative */
   top: 0.3vh; /* Adjust the top position to lift up the title */
   left: 2vh;
+}
+
+.backButton {
+  position: fixed;
+  bottom: 9vh; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000; /* Ensure the button appears above other content */
+
+  align-items: center;
+  background-image: linear-gradient(144deg, #131761, #1f2d4d 50%, #131761);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  height: 30px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.backButton:active,
+.backButton:hover {
+  outline: 0;
+}
+
+.backButton span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.backButton:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .backButton {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
+.contentContainer {
+  width: 80%; /* Adjust the width of the container */
+  max-width: 80%; /* Maximum width of the container */
+  margin: 50px auto; /* Auto margin on the left and right will center the container horizontally, and adjust the space between the container and the top and bottom edges of the screen */
+  margin-top: 20px;
+  margin-bottom: 50px;
+  overflow-y: auto; /* Enable vertical scrolling if needed */
+  padding: 10px; /* Add space inside the container between the content and the border */
+  text-align: center; /* Center-align the text inside the container */
+  word-wrap: break-word; /* Allow long words to be broken and wrap onto the next line */
+  max-height: 70vh;
 }
 
 .hidden-element {

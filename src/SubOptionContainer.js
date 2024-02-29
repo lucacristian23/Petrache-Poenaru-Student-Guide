@@ -1,4 +1,5 @@
 import SubOption from "./SubOption";
+
 import "./index.css";
 /*
 export default function SubOptionContainer({ display, setDisplay, subObj }) {
@@ -21,22 +22,29 @@ export default function SubOptionContainer({
   setDisplay,
   subObj,
   parentTitle,
+  displayList,
+  setDisplayList,
 }) {
   const handleClick = (subOptionKey) => {
     console.log(`Clicked on suboption ${subOptionKey} of ${parentTitle}`);
     // Perform any other actions as needed
+    setDisplayList(() => !displayList);
   };
-
+  console.log(displayList);
   return (
-    <ul className={`sub-options-container ${display ? "hidden-element" : ""}`}>
-      {subObj.map(({ key, value }) => (
-        <SubOption
-          key={key}
-          className="subOptions"
-          infoObj={{ [key]: value }}
-          onClick={() => handleClick(key)}
-        />
-      ))}
-    </ul>
+    <>
+      <ul
+        className={`sub-options-container ${display ? "hidden-element" : ""}`}
+      >
+        {subObj.map(({ key, value }) => (
+          <SubOption
+            key={key}
+            className="subOptions"
+            infoObj={{ [key]: value }}
+            onClick={() => handleClick(key)}
+          />
+        ))}
+      </ul>
+    </>
   );
 }

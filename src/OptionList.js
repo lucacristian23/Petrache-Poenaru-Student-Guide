@@ -1,5 +1,6 @@
+import { useState } from "react";
 import OptionAndSubOptionContainer from "./OptionAndSubOptionContainer.js";
-
+import DisplayText from "./DisplayText";
 /*
 export default function OptionList() {
   return (
@@ -103,11 +104,24 @@ const infoData = [
 ];
 
 export default function OptionList() {
+  const [displayList, setDisplayList] = useState(false);
   return (
-    <ul className="option-list">
-      {infoData.map((info) => (
-        <OptionAndSubOptionContainer infoObj={info} key={info.title} />
-      ))}
-    </ul>
+    <>
+      <ul className={`option-list ${displayList ? "hidden-element" : ""}`}>
+        {infoData.map((info) => (
+          <OptionAndSubOptionContainer
+            infoObj={info}
+            key={info.title}
+            displayList={displayList}
+            setDisplayList={setDisplayList}
+          />
+        ))}
+      </ul>
+      <DisplayText
+        className={` ${!displayList ? "hidden-element" : ""}`}
+        displayList={displayList}
+        setDisplayList={setDisplayList}
+      />
+    </>
   );
 }

@@ -19,8 +19,12 @@ export default function OptionAndSubOptionContainer({ infoObj }) {
 }
 */
 
-export default function OptionAndSubOptionContainer({ infoObj }) {
-  const [display, setDisplay] = useState(false);
+export default function OptionAndSubOptionContainer({
+  infoObj,
+  displayList,
+  setDisplayList,
+}) {
+  const [display, setDisplay] = useState(true);
   const { title, suboptions } = infoObj; // Destructure title and suboptions from infoObj
 
   return (
@@ -29,10 +33,11 @@ export default function OptionAndSubOptionContainer({ infoObj }) {
       <SubOptionContainer
         display={display}
         setDisplay={setDisplay}
+        displayList={displayList}
+        setDisplayList={setDisplayList}
         className="sub-options-container"
         subObj={suboptions}
         parentTitle={title} // Pass parentTitle as a prop
-        onClick={() => console.log("pare")}
       />
     </div>
   );
