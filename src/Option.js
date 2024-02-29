@@ -1,5 +1,3 @@
-import { useState } from "react";
-import SubOption from "./SubOption";
 import "./index.css";
 /*
 export default function Option({ optionObject }) {
@@ -19,7 +17,7 @@ export default function Option({ display, setDisplay, infoObj }) {
   return (
     <div className="option" onClick={(e) => setDisplay(!display)}>
       <img
-        src="/test1.jpg"
+        src={infoObj.image}
         alt=""
         style={{
           width: "auto",

@@ -1,7 +1,5 @@
-import Option from "./Option";
-import SubOption from "./SubOption";
 import OptionAndSubOptionContainer from "./OptionAndSubOptionContainer.js";
-import { optionData } from "./config.js";
+
 /*
 export default function OptionList() {
   return (
@@ -18,25 +16,89 @@ export default function OptionList() {
 */
 const infoData = [
   {
-    title: "The Transport in Bucharest",
+    title: "Transport in Bucharest",
+    description: "Take a look on how to travel in Bucharest!",
+    suboptions: [
+      {
+        key: "sub1",
+        value: "Using InfoSTB App for Navigation",
+      },
+      {
+        key: "sub2",
+        value: "All you need to know about the subway system.",
+      },
+      { key: "sub3", value: "Ridesharing with Uber and Bolt" },
+      {
+        key: "sub4",
+        value: "Paying for Trips with 24pay App",
+      },
+      { key: "sub5", value: "Rent a car" },
+      {
+        key: "sub6",
+        value: "Airport Transfers: Getting to and from the Airport",
+      },
+      {
+        key: "sub7",
+        value: "Monthly Passes: Applying & Student Discounts",
+      },
+    ],
+    image: "/transportation.jpg",
+  },
+  {
+    title: "Obtaining Romanian Entry Visa",
+    description:
+      "Comprehensive guide to obtaining a Romanian visa, covering application procedures, required documentation, and essential steps for a successful application.",
+    suboptions: [
+      { key: "sub1", value: "Find out if you require entry visa" }, // form cu fiecare tara
+      { key: "sub2", value: "The process of getting the visa" },
+      { key: "sub3", value: "Documents needed for the visa" },
+      { key: "sub4", value: "How to apply online for the visa" },
+    ],
+    image: "/visa.jpg",
+  },
+  {
+    title: "Accommodation",
+    description:
+      "Explore various housing options in Romania, including university and private dormitories, off-campus rentals, and temporary stays.",
+    suboptions: [
+      { key: "sub1", value: "Application Process for University Dormitories" },
+      {
+        key: "sub2",
+        value: "Application Process for Private Dormitories",
+      },
+      { key: "sub3", value: "Finding Rentals on Online Platforms" },
+      { key: "sub4", value: "Hotel Booking & Airbnb Guide" },
+    ],
+    image: "/accomodation.jpg",
+  },
+  {
+    title: "Admission Process for English Programs",
+    description:
+      "Explore the admission process for English programs at the University. Find details on deadlines, document requirements and evaluation criteria.",
+    suboptions: [
+      { key: "sub1", value: "Admission Calendar" },
+      {
+        key: "sub2",
+        value: "Specifications for Documents",
+      },
+      { key: "sub3", value: "Required Documents" },
+      { key: "sub4", value: "Evaluation Criteria for Admission" },
+      { key: "sub5", value: "Online Document Submission Process" },
+    ],
+    image: "/admission.jpg",
+  },
+  {
+    title: "Legal Residence in Romania",
     description: "Take a look on how to navigate the Bucharest like a local!",
     suboptions: [
       { key: "sub1", value: "The ridesharing apps: Uber and Bolt" },
       {
         key: "sub2",
-        value: "How to navigate the Bucharest with InfoSTB like a pro!",
+        value: "How to navigate the Bucharest ",
       },
       { key: "sub3", value: "How to use the subway system" },
     ],
-  },
-  {
-    title: "How to get a romanian visa",
-    description: "The proces of getting a romanian visa in detail",
-    suboptions: [
-      { key: "sub1", value: "What documents do I need for the visa?" },
-      { key: "sub2", value: "How to apply online for the visa" },
-      { key: "sub3", value: "Frequently Asked Questions About Visa" },
-    ],
+    image: "/legal residency.jpg",
   },
 ];
 
@@ -44,7 +106,7 @@ export default function OptionList() {
   return (
     <ul className="option-list">
       {infoData.map((info) => (
-        <OptionAndSubOptionContainer infoObj={info} />
+        <OptionAndSubOptionContainer infoObj={info} key={info.title} />
       ))}
     </ul>
   );

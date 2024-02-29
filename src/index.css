@@ -105,7 +105,7 @@ code {
 .subOptionTitle {
   margin: 0;
   color: white;
-  font-size: 0.9vh;
+  font-size: 1vh;
   position: relative; /* Position both the title and description relative */
   top: 0.3vh; /* Adjust the top position to lift up the title */
   left: 2vh;
