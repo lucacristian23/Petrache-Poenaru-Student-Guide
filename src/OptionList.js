@@ -16,33 +16,20 @@ export default function OptionList() {
 */
 const infoData = [
   {
-    title: "Transport in Bucharest",
-    description: "Take a look on how to travel in Bucharest!",
+    title: "Admission Process for English Programs",
+    description:
+      "Explore the admission process for English programs at the University. Find details on deadlines, document requirements and evaluation criteria.",
     suboptions: [
-      {
-        key: "sub1",
-        value: "Using InfoSTB App for Navigation",
-      },
+      { key: "sub1", value: "Admission Calendar" },
       {
         key: "sub2",
-        value: "All you need to know about the subway system.",
+        value: "Specifications for Documents",
       },
-      { key: "sub3", value: "Ridesharing with Uber and Bolt" },
-      {
-        key: "sub4",
-        value: "Paying for Trips with 24pay App",
-      },
-      { key: "sub5", value: "Rent a car" },
-      {
-        key: "sub6",
-        value: "Airport Transfers: Getting to and from the Airport",
-      },
-      {
-        key: "sub7",
-        value: "Monthly Passes: Applying & Student Discounts",
-      },
+      { key: "sub3", value: "Required Documents" },
+      { key: "sub4", value: "Evaluation Criteria for Admission" },
+      { key: "sub5", value: "Online Document Submission Process" },
     ],
-    image: "/transportation.jpg",
+    image: "/admission.jpg",
   },
   {
     title: "Obtaining Romanian Entry Visa",
@@ -72,22 +59,6 @@ const infoData = [
     image: "/accomodation.jpg",
   },
   {
-    title: "Admission Process for English Programs",
-    description:
-      "Explore the admission process for English programs at the University. Find details on deadlines, document requirements and evaluation criteria.",
-    suboptions: [
-      { key: "sub1", value: "Admission Calendar" },
-      {
-        key: "sub2",
-        value: "Specifications for Documents",
-      },
-      { key: "sub3", value: "Required Documents" },
-      { key: "sub4", value: "Evaluation Criteria for Admission" },
-      { key: "sub5", value: "Online Document Submission Process" },
-    ],
-    image: "/admission.jpg",
-  },
-  {
     title: "Legal Residence in Romania",
     description: "Take a look on how to navigate the Bucharest like a local!",
     suboptions: [
@@ -99,6 +70,35 @@ const infoData = [
       { key: "sub3", value: "How to use the subway system" },
     ],
     image: "/legal residency.jpg",
+  },
+  {
+    title: "Transport in Bucharest",
+    description: "Take a look on how to travel in Bucharest!",
+    suboptions: [
+      {
+        key: "sub1",
+        value: "Using InfoSTB App for Navigation",
+      },
+      {
+        key: "sub2",
+        value: "All you need to know about the subway system.",
+      },
+      { key: "sub3", value: "Ridesharing with Uber and Bolt" },
+      {
+        key: "sub4",
+        value: "Paying for Trips with 24pay App",
+      },
+      { key: "sub5", value: "Rent a car" },
+      {
+        key: "sub6",
+        value: "Airport Transfers: Getting to and from the Airport",
+      },
+      {
+        key: "sub7",
+        value: "Monthly Passes: Applying & Student Discounts",
+      },
+    ],
+    image: "/transportation.jpg",
   },
 ];
 
