@@ -110,7 +110,7 @@ export default function DisplayText({
                 and signing the enrollment contract according to the schedule of
                 the current Methodology.{" "}
               </p>
-              <img src="/annex6.png" />
+              <img src="/annex6.png" alt="test" />
             </div>
           )}
         {selectedSubOption.subOptionKey === "sub5" &&
