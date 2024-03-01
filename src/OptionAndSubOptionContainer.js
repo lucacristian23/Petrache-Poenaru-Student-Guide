@@ -23,6 +23,8 @@ export default function OptionAndSubOptionContainer({
   infoObj,
   displayList,
   setDisplayList,
+  selectedSubOption,
+  setSelectedSubOption,
 }) {
   const [display, setDisplay] = useState(true);
   const { title, suboptions } = infoObj; // Destructure title and suboptions from infoObj
@@ -38,6 +40,8 @@ export default function OptionAndSubOptionContainer({
         className="sub-options-container"
         subObj={suboptions}
         parentTitle={title} // Pass parentTitle as a prop
+        selectedSubOption={selectedSubOption}
+        setSelectedSubOption={setSelectedSubOption}
       />
     </div>
   );

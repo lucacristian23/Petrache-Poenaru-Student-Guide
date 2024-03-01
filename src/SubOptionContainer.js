@@ -24,13 +24,19 @@ export default function SubOptionContainer({
   parentTitle,
   displayList,
   setDisplayList,
+  selectedSubOption,
+  setSelectedSubOption,
 }) {
   const handleClick = (subOptionKey) => {
     console.log(`Clicked on suboption ${subOptionKey} of ${parentTitle}`);
     // Perform any other actions as needed
-    setDisplayList(() => !displayList);
+    setSelectedSubOption({
+      subOptionKey: subOptionKey,
+      parentTitle: parentTitle,
+    });
+    setDisplayList(!displayList);
   };
-  console.log(displayList);
+
   return (
     <>
       <ul

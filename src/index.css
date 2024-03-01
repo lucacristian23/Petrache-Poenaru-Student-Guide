@@ -158,7 +158,7 @@ code {
 
 .backButton {
   position: fixed;
-  bottom: 9vh; /* Adjust as needed */
+  bottom: 6vh; /* Adjust as needed */
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000; /* Ensure the button appears above other content */

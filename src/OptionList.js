@@ -62,14 +62,7 @@ const infoData = [
   {
     title: "Legal Residence in Romania",
     description: "Take a look on how to navigate the Bucharest like a local!",
-    suboptions: [
-      { key: "sub1", value: "The ridesharing apps: Uber and Bolt" },
-      {
-        key: "sub2",
-        value: "How to navigate the Bucharest ",
-      },
-      { key: "sub3", value: "How to use the subway system" },
-    ],
+    suboptions: [],
     image: "/legal residency.jpg",
   },
   {
@@ -105,6 +98,10 @@ const infoData = [
 
 export default function OptionList() {
   const [displayList, setDisplayList] = useState(false);
+  const [selectedSubOption, setSelectedSubOption] = useState({
+    subOptionKey: "a1",
+    parentTitle: "a2",
+  });
   return (
     <>
       <ul className={`option-list ${displayList ? "hidden-element" : ""}`}>
@@ -114,6 +111,8 @@ export default function OptionList() {
             key={info.title}
             displayList={displayList}
             setDisplayList={setDisplayList}
+            selectedSubOption={selectedSubOption}
+            setSelectedSubOption={setSelectedSubOption}
           />
         ))}
       </ul>
@@ -121,6 +120,8 @@ export default function OptionList() {
         className={` ${!displayList ? "hidden-element" : ""}`}
         displayList={displayList}
         setDisplayList={setDisplayList}
+        selectedSubOption={selectedSubOption}
+        setSelectedSubOption={setSelectedSubOption}
       />
     </>
   );
