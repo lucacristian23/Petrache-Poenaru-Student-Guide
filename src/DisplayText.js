@@ -1,5 +1,5 @@
 import BackButton from "./BackButton.js";
-
+import SelectCountry from "./SelectCountry.js";
 export default function DisplayText({
   className,
   displayList,
@@ -145,6 +145,11 @@ export default function DisplayText({
               Recognition and Equivalence of Diplomas of your studies denies
               your enrollment.{" "}
             </p>
+          )}
+
+        {selectedSubOption.subOptionKey === "sub1" &&
+          selectedSubOption.parentTitle === "Obtaining Romanian Entry Visa" && (
+            <SelectCountry />
           )}
       </div>
 

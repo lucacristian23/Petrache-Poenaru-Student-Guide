@@ -225,6 +225,11 @@ code {
   max-height: 70vh;
 }
 
+.selectCountry {
+  font-weight: bold; /* Increase font weight */
+  font-size: 1.6vh; /* Increase font size */
+}
+
 .hidden-element {
   display: none;
 }
