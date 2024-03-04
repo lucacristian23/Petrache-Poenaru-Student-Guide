@@ -9,6 +9,7 @@ export default function DisplayText({
   setSelectedSubOption,
 }) {
   const [admissionDocuments, setAdmissionDocuments] = useState(null);
+  const [transportInfo, setTransportInfo] = useState(1);
 
   return (
     <div className={className}>
@@ -565,9 +566,275 @@ export default function DisplayText({
           selectedSubOption.parentTitle === "Obtaining Romanian Entry Visa" && (
             <SelectCountry />
           )}
+
+        {selectedSubOption.subOptionKey === "sub1" &&
+          selectedSubOption.parentTitle === "Transport in Bucharest" && (
+            <div>
+              <div className={transportInfo === 1 ? "" : "hidden-element"}>
+                <h4>
+                  How to use Info TB App for navigating the Bucharest like a
+                  local!
+                </h4>
+                <div style={{ border: "1px solid black" }}>
+                  <h5>
+                    The Info TB app is an extremely useful tool when it comes to
+                    using public transport in Bucharest. One of its most
+                    valuable features is the ability to track in real-time the
+                    location of any tram, bus, or minibus on the map.
+                    Additionally, Info TB can provide you with the optimal
+                    routes to travel from point A to point B, showing you on the
+                    map the walking path, the bus stop where you need to board
+                    the necessary bus, and where you need to get off.
+                  </h5>
+                </div>
+                <h5 style={{ textAlign: "left" }}>
+                  1. Learn how to track in real-time the location of any tram,
+                  bus, or minibus on the map.
+                </h5>
+                <button
+                  className="button-8"
+                  onClick={() => setTransportInfo(2)}
+                >
+                  PRESS HERE
+                </button>{" "}
+                <h5 style={{ textAlign: "left" }}>
+                  2. Learn how to find out the optimal routes to travel from
+                  point A to point B.
+                </h5>
+                <button
+                  className="button-8"
+                  onClick={() => setTransportInfo(3)}
+                >
+                  PRESS HERE
+                </button>
+              </div>
+
+              <div className={transportInfo === 2 ? "" : "hidden-element"}>
+                <h4>
+                  {" "}
+                  Learn how to track in real-time the location of any tram, bus,
+                  or minibus on the map
+                </h4>
+                <div style={{ textAlign: "left" }}>
+                  <h4>
+                    Step 1: Once you're in the app, click on the 'Lines' button.
+                  </h4>
+                  <div>
+                    <img
+                      src="/transporta1.jpeg"
+                      alt="da"
+                      style={{ maxWidth: "70%", height: "auto" }}
+                    />
+                  </div>
+                </div>
+
+                <div style={{ textAlign: "left" }}>
+                  <h4>
+                    Step 2: Select the line number of the public transportation
+                    route you want to view in real-time on the map. Let's say we
+                    want to see the location of the trams on line 1.
+                  </h4>
+                  <div>
+                    <img
+                      src="/transporta2.jpeg"
+                      alt="da"
+                      style={{ maxWidth: "70%", height: "auto" }}
+                    />
+                  </div>
+                </div>
+
+                <div style={{ textAlign: "left" }}>
+                  <h4>
+                    Step 3: Select the desired direction of travel for the
+                    public transportation route.
+                  </h4>
+                  <div>
+                    <img
+                      src="/transporta3.jpeg"
+                      alt="da"
+                      style={{ maxWidth: "70%", height: "auto" }}
+                    />
+                  </div>
+                </div>
+
+                <div style={{ textAlign: "left" }}>
+                  <h4>
+                    Step 4: Look at the map and observe how far away the nearest
+                    public transportation vehicle is from the station you're
+                    interested in.
+                  </h4>
+                  <div>
+                    <img
+                      src="/transporta4.jpeg"
+                      alt="da"
+                      style={{ maxWidth: "70%", height: "auto" }}
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className={transportInfo === 3 ? "" : "hidden-element"}>
+                <h4>
+                  {" "}
+                  Learn how to find out the optimal routes to travel from point
+                  A to point B.
+                </h4>
+                <div style={{ textAlign: "left" }}>
+                  <h4>
+                    Step 1: Once you're in the application, press "Search
+                    Destination" to input the location you want to reach.
+                  </h4>
+                  <div>
+                    <img
+                      src="/transportb1.jpeg"
+                      alt="da"
+                      style={{ maxWidth: "70%", height: "auto" }}
+                    />
+                  </div>
+                </div>
+
+                <div style={{ textAlign: "left" }}>
+                  <h4>
+                    Step 2: Enter in the box labeled FROM, the one with the blue
+                    flag, the name of the location from where you want to start
+                    your journey. Let's assume we want to depart from the
+                    Faculty of Medicine and head to Promenada Mall. Once all the
+                    data is correctly entered, we will press the "Search Best
+                    Routes" button.
+                  </h4>
+                  <div>
+                    <img
+                      src="/transportb2.jpeg"
+                      alt="da"
+                      style={{ maxWidth: "70%", height: "auto" }}
+                    />
+                  </div>
+                </div>
+
+                <div style={{ textAlign: "left" }}>
+                  <h4>
+                    Step 3: Choose the route that appeals to you the most, based
+                    on your preferences. In our example, we will select the
+                    first route, as it is the fastest (only 38 minutes).
+                  </h4>
+                  <div>
+                    <img
+                      src="/transportb3.jpeg"
+                      alt="da"
+                      style={{ maxWidth: "70%", height: "auto" }}
+                    />
+                  </div>
+                </div>
+
+                <div style={{ textAlign: "left" }}>
+                  <h4>
+                    Step 4: Now we can analyze the route details. We notice that
+                    we'll need to walk for 8 minutes to reach the "Eroilor"
+                    metro station on the M3 line. Once we take the metro towards
+                    "Anghel Saligny," we'll need to get off at the "Piata
+                    Unirii" station on the M3 line. Then, we'll need to travel
+                    through the underground passage to reach the "Piata Unirii"
+                    metro station on the M2 line. Next, we'll travel towards
+                    "Pipera" direction and arrive at the "Aurel Vlaicu" metro
+                    station. Finally, we'll need to walk for 9 minutes to reach
+                    our destination.
+                  </h4>
+                  <div>
+                    <img
+                      src="/transportb4a.jpeg"
+                      alt="da"
+                      style={{ maxWidth: "70%", height: "auto" }}
+                    />
+                  </div>
+                </div>
+
+                <div style={{ textAlign: "left" }}>
+                  <h4>
+                    Before we start our journey, we can press the "Start" button
+                    to receive real-time notifications about how many stations
+                    we have left until we need to disembark from public
+                    transportation. Additionally, we can also press the "Map"
+                    button to see the route we're about to take directly on the
+                    map of Bucharest.
+                  </h4>
+                  <div>
+                    <img
+                      src="/transportb4.jpeg"
+                      alt="da"
+                      style={{ maxWidth: "70%", height: "auto" }}
+                    />
+                  </div>
+                </div>
+
+                <div style={{ textAlign: "left" }}>
+                  <h4>
+                    This will be our route. We can zoom in on the important
+                    points to see more details. We will zoom towards the
+                    starting point, where the blue flag is.
+                  </h4>
+                  <div>
+                    <img
+                      src="/transportb5.jpeg"
+                      alt="da"
+                      style={{ maxWidth: "70%", height: "auto" }}
+                    />
+                  </div>
+                </div>
+
+                <div style={{ textAlign: "left" }}>
+                  <h4>
+                    The dotted line represents the route we need to walk to get
+                    to the 'Eroilor' metro station.
+                  </h4>
+                  <div>
+                    <img
+                      src="/transportb6.jpeg"
+                      alt="da"
+                      style={{ maxWidth: "70%", height: "auto" }}
+                    />
+                  </div>
+                </div>
+
+                <div style={{ textAlign: "left" }}>
+                  <h4>
+                    The distance between the two metro stations, with that point
+                    in the middle, represents the route through the underground
+                    passage to get from one line to another.
+                  </h4>
+                  <div>
+                    <img
+                      src="/transportb7.jpeg"
+                      alt="da"
+                      style={{ maxWidth: "70%", height: "auto" }}
+                    />
+                  </div>
+                </div>
+
+                <div style={{ textAlign: "left" }}>
+                  <h4>
+                    Now we can see the route we need to walk from the station
+                    where we need to get off to the destination, represented by
+                    the red flag.
+                  </h4>
+                  <div>
+                    <img
+                      src="/transportb8.jpeg"
+                      alt="da"
+                      style={{ maxWidth: "70%", height: "auto" }}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
       </div>
 
-      <BackButton displayList={displayList} setDisplayList={setDisplayList} />
+      <BackButton
+        displayList={displayList}
+        setDisplayList={setDisplayList}
+        transportInfo={transportInfo}
+        setTransportInfo={setTransportInfo}
+      />
     </div>
   );
 }

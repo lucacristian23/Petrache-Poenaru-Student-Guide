@@ -71,7 +71,7 @@ const infoData = [
     suboptions: [
       {
         key: "sub1",
-        value: "Using InfoSTB App for Navigation",
+        value: "Using Info TB App for Navigation",
       },
       {
         key: "sub2",

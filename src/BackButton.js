@@ -1,7 +1,12 @@
-export default function BackButton({ displayList, setDisplayList }) {
+export default function BackButton({
+  displayList,
+  setDisplayList,
+  transportInfo,
+  setTransportInfo,
+}) {
   const handleClick = () => {
-    console.log("test");
     setDisplayList(() => !displayList);
+    setTransportInfo(() => 1);
   };
   return (
     <button className="backButton" onClick={() => handleClick()}>

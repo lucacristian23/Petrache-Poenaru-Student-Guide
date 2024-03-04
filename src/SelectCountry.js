@@ -562,7 +562,7 @@ const SelectCountry = () => {
             ? `No, ${country} doesn't require a visa in order to enter Romania.`
             : options.find((option) => option.name === country)?.requireVisa ===
               3
-            ? `No ${country} doesn't require a visa in order to enter Romania. However, citizens from ${country} are not allowed to stay in Romania for more than 90 days within any 180-day period without applying for a long-stay visa. `
+            ? `No, ${country} doesn't require a visa in order to enter Romania. However, citizens from ${country} are not allowed to stay in Romania for more than 90 days within any 180-day period without applying for a long-stay visa. `
             : ""}
         </h3>
         {options.find((option) => option.name === country)?.requireVisa === 3 &&
