@@ -55,7 +55,6 @@ const infoData = [
         value: "Application Process for Private Dormitories",
       },
       { key: "sub3", value: "Finding Rentals on Online Platforms" },
-      { key: "sub4", value: "Hotel Booking & Airbnb Guide" },
     ],
     image: "/accomodation.jpg",
   },
@@ -77,18 +76,14 @@ const infoData = [
         key: "sub2",
         value: "All you need to know about the subway system.",
       },
-      { key: "sub3", value: "Ridesharing with Uber and Bolt" },
+      { key: "sub3", value: "Ridesharing Apps In Bucharest" },
+
       {
         key: "sub4",
-        value: "Paying for Trips with 24pay App",
-      },
-      { key: "sub5", value: "Rent a car" },
-      {
-        key: "sub6",
         value: "Airport Transfers: Getting to and from the Airport",
       },
       {
-        key: "sub7",
+        key: "sub5",
         value: "Monthly Passes: Applying & Student Discounts",
       },
     ],

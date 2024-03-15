@@ -827,6 +827,186 @@ export default function DisplayText({
               </div>
             </div>
           )}
+
+        {selectedSubOption.subOptionKey === "sub2" &&
+          selectedSubOption.parentTitle === "Transport in Bucharest" && (
+            <div>
+              <h2>All you need to know about the subway system</h2>
+              <div>
+                <h3 style={{ textAlign: "left" }}>
+                  The metro map of Bucharest is highly useful and incredibly
+                  easy to use. By utilizing it, we won't encounter any issues
+                  regarding where to disembark, which metro line to take, at
+                  which station to transfer, and which route to follow to reach
+                  from point A to point B. Press{" "}
+                  <a
+                    href="http://www.metrorex.ro/Resurse/Harta/harta_2023.png"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    HERE
+                  </a>{" "}
+                  in order to open the map.
+                </h3>
+
+                <h4 style={{ textAlign: "left" }}>
+                  Casting a first glance over the map, we can observe the five
+                  available mainlines, each with its specific color. The dotted
+                  mainlines represent subway lines that will be built in the
+                  future.
+                </h4>
+                <div style={{ border: "1px solid black" }}>
+                  <h4 style={{ textAlign: "left" }}>
+                    <span style={{ color: "#FFD700" }}>Yellow:</span> The line
+                    number 1(M1), between Dristor 1 and Pantelimon
+                  </h4>
+
+                  <h4 style={{ textAlign: "left" }}>
+                    <span style={{ color: "blue" }}>Blue:</span> The line number
+                    2(M2), between Pipera and Tudor Arghezi
+                  </h4>
+
+                  <h4 style={{ textAlign: "left" }}>
+                    <span style={{ color: "red" }}>Red:</span> The line number
+                    3(M3), between Preciziei and Anghel Saligny
+                  </h4>
+
+                  <h4 style={{ textAlign: "left" }}>
+                    <span style={{ color: "green" }}>Green:</span> The line
+                    number 4(M4), between Straulesti and Gara de Nord 2
+                  </h4>
+
+                  <h4 style={{ textAlign: "left" }}>
+                    <span style={{ color: "orange" }}>Orange:</span> The line
+                    number 5(M5), between Valea Ialomitei/Raul Doamnei and
+                    Eroilor
+                  </h4>
+                </div>
+
+                <h4 style={{ textAlign: "left" }}>
+                  <span style={{ fontSize: "1.5em" }}>S</span>ome stations serve
+                  as interchange hubs, providing access to two different subway
+                  lines simultaneously. Pedestrians will need to traverse
+                  through the underground passage to move from Station 1, which
+                  has access to one subway line, to Station 2, which provides
+                  access to a different subway line. These types of stations are
+                  represented on the map with the following symbol.
+                </h4>
+
+                <img
+                  src="/doublestation.png"
+                  alt="da"
+                  style={{
+                    maxWidth: "200%",
+                    height: "200%",
+                    objectFit: "cover",
+                  }}
+                />
+
+                <h4 style={{ textAlign: "left" }}>
+                  If you look at the map, you can see that the "Piata Victoriei"
+                  station has such a symbol. Piata Victoriei 1 provides access
+                  to the Yellow mainline (M1), and Piata Victoriei 2 provides
+                  access to the Blue mainline (M2).
+                </h4>
+
+                <h4 style={{ textAlign: "left" }}>
+                  <span style={{ fontSize: "1.5em" }}>F</span>urthermore,
+                  between certain stations, metro trains can operate on two
+                  different lines. We can observe how Timpuri Noi and Mihai
+                  Bravu stations are interconnected by both the red and yellow
+                  lines. To determine which line the train we're about to board
+                  is on, we can either read the display on the front of the
+                  train or the station display announcing upcoming trains,
+                  indicating the last station towards which the train is headed.
+                  For instance, if we're waiting at Timpuri Noi station and see
+                  that the train displays "Anghel Saligny," it means the train
+                  is operating on the red line (M3), heading towards "Anghel
+                  Saligny." The train will proceed similarly to trains on the
+                  yellow line (M1) until it reaches "Nicolae Grigorescu"
+                  station, where we can observe the two routes of the lines
+                  diverging.
+                </h4>
+
+                <h4 style={{ textAlign: "left" }}>
+                  <span style={{ fontSize: "1.5em" }}>W</span>ith all this
+                  knowledge, we can figure out how to get from any station A to
+                  any station B. For example, if we want to travel from Eroilor
+                  (M2) to Parc Bazilescu (M4), looking at the map, we can see
+                  that the most optimal route would be to first travel towards
+                  Basarab, taking the metro in the direction of Dristor 1. Once
+                  we reach Basarab, we can switch lines, noting the symbol we
+                  discussed earlier. Once we've arrived at the location of green
+                  line(M4), all we need to do is take the metro in the direction
+                  of Straulesti and get off at Parc Bazilescu station.
+                </h4>
+
+                <h3>
+                  Let's take a look at the metro ticket prices, including
+                  discounts for multiple trips purchased, available
+                  subscriptions, and also discounts for students.
+                </h3>
+              </div>
+              <div style={{ border: "1px solid black" }}>
+                <h3>1 Journey - 3 LEI</h3>
+                <h3>2 Journeys - 6 LEI</h3>
+                <h3>24-hour pass - 8 LEI</h3>
+                <h3>72-hour pass - 20 LEI</h3>
+                <h3>Weekly Pass - 30 LEI</h3>
+                <h3>Monthly Pass - 80 LEI</h3>
+                <h3>6 Month Pass - 400 LEI</h3>
+                <h3>Yearly Pass - 700 LEI</h3>
+                <h3>Monthly Pass with 90% off for students - 8 LEI</h3>
+                <h3>10 Journeys with 90% off for students - 2,50 LEI</h3>
+              </div>
+            </div>
+          )}
+
+        {selectedSubOption.subOptionKey === "sub3" &&
+          selectedSubOption.parentTitle === "Transport in Bucharest" && (
+            <div>
+              <h2>Ridesharing Apps In Bucharest</h2>
+
+              <h3>
+                The majority of popular ride-sharing companies in Europe can
+                also be used in Romania.
+              </h3>
+            </div>
+          )}
+
+        {selectedSubOption.subOptionKey === "sub4" &&
+          selectedSubOption.parentTitle === "Transport in Bucharest" && (
+            <div>
+              <h2>Airport Transfers: Getting to and from the Airport</h2>
+
+              <h3>
+                To travel to or from the airport, apart from using a taxi or a
+                ride-sharing service, you can also opt for the two non-stop bus
+                lines, namely line 100 and line 442. Additionally, there's the
+                option of a 15-minute non-stop train journey, which will take
+                you directly from the Airport to Gara de Nord.
+              </h3>
+            </div>
+          )}
+
+        {selectedSubOption.subOptionKey === "sub3" &&
+          selectedSubOption.parentTitle === "Accommodation" && (
+            <div>
+              <h2>Finding Rentals on Online Platforms</h2>
+              <h3>
+                For optimal results in finding an apartment to your liking
+                online, it's recommended to search on Google in Romanian rather
+                than English. "Inchiriere Apartament Bucuresti" would yield more
+                useful results than "Rent Apartment Bucharest." After conducting
+                a search in Romanian, you should see results from the most
+                popular rental websites in the country, where you'll have very
+                good chances of finding something to your liking. The only
+                difficulty might be navigating the website in Romanian. Use the
+                filters on the website to make the search process easier for
+                you.
+              </h3>
+            </div>
+          )}
       </div>
 
       <BackButton
