@@ -243,7 +243,7 @@ const SelectCountry = () => {
     { name: "Cabo Verde", requireVisa: 2 },
     { name: "Cambodia", requireVisa: 2 },
     { name: "Cameroon", requireVisa: 2 },
-    { name: "Canada", requireVisa: 3, details: "" },
+    { name: "Canada", requireVisa: ``, details: "" },
     { name: "Central African Republic", requireVisa: 2 },
     { name: "Chad", requireVisa: 2 },
     { name: "Chile", requireVisa: 3, details: "" },
@@ -317,7 +317,7 @@ const SelectCountry = () => {
     { name: "Israel", requireVisa: 3, details: "" },
     { name: "Italy", requireVisa: 1 },
     { name: "Jamaica", requireVisa: 2 },
-    { name: "Japan", requireVisa: 3, details: "" },
+    { name: "Japan", requireVisa: 1, details: "" },
     { name: "Jordan", requireVisa: 2 },
     { name: "Kazakhstan", requireVisa: 2 },
     { name: "Kenya", requireVisa: 2 },
@@ -511,7 +511,7 @@ const SelectCountry = () => {
         "The visa waiver applies from the date of entry into force of an agreement on visa waiver, which is to be concluded with the European Union.",
     },
     { name: "United Kingdom", requireVisa: 1 },
-    { name: "United States", requireVisa: 3, details: "" },
+    { name: "United States", requireVisa: 1, details: "" },
     { name: "Uruguay", requireVisa: 3, details: "" },
     { name: "Uzbekistan", requireVisa: 2 },
     {
@@ -556,13 +556,13 @@ const SelectCountry = () => {
       <div>
         <h3>
           {options.find((option) => option.name === country)?.requireVisa === 2
-            ? `Yes, ${country} requires a visa in order to enter Romania.`
+            ? `Yes, ${country} requires a visa in order to enter Romania. Try to apply for the visa as early as possible, as the process takes time.`
             : options.find((option) => option.name === country)?.requireVisa ===
               1
-            ? `No, ${country} doesn't require a visa in order to enter Romania.`
+            ? `No, ${country} doesn't require a visa in order to enter Romania. `
             : options.find((option) => option.name === country)?.requireVisa ===
               3
-            ? `No, ${country} doesn't require a visa in order to enter Romania. However, citizens from ${country} are not allowed to stay in Romania for more than 90 days within any 180-day period without applying for a long-stay visa. `
+            ? `No, ${country} doesn't require a visa in order to enter Romania. However, citizens from ${country} are not allowed to stay in Romania for more than 90 days within any 180-day period without applying for a long-stay visa. Don't forget that the visa interview will need to be conducted in ${country}. Try to apply for the visa as early as possible, as the process takes time.`
             : ""}
         </h3>
         {options.find((option) => option.name === country)?.requireVisa === 3 &&

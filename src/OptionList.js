@@ -61,7 +61,14 @@ const infoData = [
   {
     title: "Legal Residence in Romania",
     description: "Take a look on how to navigate the Bucharest like a local!",
-    suboptions: [],
+    suboptions: [
+      { key: "sub1", value: "General informations" },
+      {
+        key: "sub2",
+        value: "Required Documents",
+      },
+      { key: "sub3", value: "How To Apply Online" },
+    ],
     image: "/legal residency.jpg",
   },
   {
@@ -81,10 +88,6 @@ const infoData = [
       {
         key: "sub4",
         value: "Airport Transfers: Getting to and from the Airport",
-      },
-      {
-        key: "sub5",
-        value: "Monthly Passes: Applying & Student Discounts",
       },
     ],
     image: "/transportation.jpg",
