@@ -82,7 +82,7 @@ code {
   position: relative; /* Position the option container relative */
   border: 0.25vh solid /*#144072*/ #11304a; /* Coral border color */
   padding: 0vh; /* Add padding to create space between border and content */
-  height: 2.7vh;
+  height: 3vh;
   margin-left: 0; /* Align the subOptions to the absolute left margin */
   border-radius: 16px;
   background-color:/* #1e3350 */ #1f3451;
@@ -92,7 +92,8 @@ code {
 .sub-options-container {
   display: flex;
   position: relative; /* Position the container relative to its parent option */
-  width: 60%; /* Make the container full width */
+  width: 68%; /* Make the container full width */
+
   margin-left: auto;
   border-radius: 4px; /* Make the borders slightly rounded */
   border: 0.25vh solid /*#16253c*/ #131761; /* Coral border color */
@@ -108,7 +109,7 @@ code {
   align-items: center;
   border: 0.25vh solid #0c1c34;
   padding: 0 20px; /* Adjust padding as needed */
-  height: 6vh;
+  height: 8vh;
   border-radius: 16px;
   background-color: #1b2b43;
   position: relative; /* Position the container relative */
@@ -125,7 +126,7 @@ code {
 
 .textContainer {
   position: absolute; /* Position the text container absolute */
-  left: 10.5vh; /* Adjust to align with the image */
+  left: 13.2vh; /* Adjust to align with the image */
   top: 0; /* Align with the top of the container */
 }
 
@@ -133,27 +134,28 @@ code {
 .optionDescription {
   margin: 0;
   color: white;
-  font-size: 1.4vh;
+
   position: relative; /* Position both the title and description relative */
 }
 
 .optionTitle {
-  top: 0.3vh; /* Adjust the top position to lift up the title */
+  top: 0.27vh; /* Adjust the top position to lift up the title */
+  font-size: 1.4vh;
 }
 
 .optionDescription {
-  top: 0.3vh; /* Adjust the top position to lift up the description */
-  font-size: 1vh;
+  top: 0.27vh; /* Adjust the top position to lift up the description */
+  font-size: 1.2vh;
   line-height: 1.2;
 }
 
 .subOptionTitle {
   margin: 0;
   color: white;
-  font-size: 1.035vh;
+  font-size: 1.2vh;
   position: relative; /* Position both the title and description relative */
   top: 0.3vh; /* Adjust the top position to lift up the title */
-  left: 2vh;
+  left: 1.6vh;
 }
 
 .backButton {

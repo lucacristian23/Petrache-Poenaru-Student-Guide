@@ -102,7 +102,10 @@ const infoData = [
     title: "What to do in Bucharest",
     description:
       "Explore what you can visit and what activities you can do in Bucharest!",
-    suboptions: [{ key: "sub1", value: "Tourist Attractions" }],
+    suboptions: [
+      { key: "sub1", value: "Tourist Attractions" },
+      { key: "sub2", value: "Eveniments and Parties" },
+    ],
     image: "/bucharestfun.jpg",
   },
 ];
