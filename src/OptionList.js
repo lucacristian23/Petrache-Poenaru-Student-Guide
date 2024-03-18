@@ -92,6 +92,19 @@ const infoData = [
     ],
     image: "/transportation.jpg",
   },
+  {
+    title: "Student Fees",
+    description: "Take a look at the university's annual taxes",
+    suboptions: [{ key: "sub1", value: "Taxes" }],
+    image: "/taxes.jpg",
+  },
+  {
+    title: "What to do in Bucharest",
+    description:
+      "Explore what you can visit and what activities you can do in Bucharest!",
+    suboptions: [{ key: "sub1", value: "Tourist Attractions" }],
+    image: "/bucharestfun.jpg",
+  },
 ];
 
 export default function OptionList() {

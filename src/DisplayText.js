@@ -755,161 +755,117 @@ export default function DisplayText({
         {selectedSubOption.subOptionKey === "sub3" &&
           selectedSubOption.parentTitle === "Legal Residence in Romania" && (
             <div>
-              <h2>Required documents:</h2>
-
-              <button onClick={() => setApplyOnline("UE")} className="button-8">
-                For Citizens of The EU/EEA/Swiss Confederation
-              </button>
-
-              <button
-                onClick={() => setApplyOnline("nonUE")}
-                className="button-8"
-              >
-                For Citizens From Non-EU Citizens
-              </button>
-
-              <div className={applyOnline === "UE" ? "" : "hidden-element"}>
-                <div style={{ border: "1px solid black" }}>
-                  <h4>Identity Card or Passport (original and copy)</h4>
-
-                  <div style={{ border: "1px solid black" }}>
-                    <h4>
-                      Documents attesting to the fact that you are enrolled in
-                      the faculty. (student ID, student card or certificate
-                      issued by the International Student Service)
-                    </h4>
-                  </div>
-                </div>
-
-                <div style={{ border: "1px solid black" }}>
-                  <h4>
-                    Proof Of Means of Maintenance (declaration on your own
-                    responsibility that shows that you can support yourself)
-                  </h4>
-                </div>
-
-                <div style={{ border: "1px solid black" }}>
-                  <h4>
-                    Proof of health insurance, with the exception of persons
-                    falling under art. 213 paragraph (1) letter a{")"} from Law
-                    no. 95/2006, with subsequent amendments and additions such
-                    as:
-                    <h5>
-                      a{")"} Documents certifying the quality of insured in the
-                      national health insurance system in Romania, respectively
-                      European health card, insurance card, other documents
-                      certifying this quality
-                    </h5>
-                    <h5>
-                      b{")"} Documents certifying the quality of being insured
-                      in the national health insurance systems of other member
-                      states, respectively the European social health insurance
-                      card or any other form that opens the right to medical
-                      assistance, issued in application of Regulation (EC) no.
-                      883/ 2004 of the European Parliament and the Council of
-                      April 29, 2004 regarding the coordination of social
-                      security systems, published in the Official Journal of the
-                      European Union series L no. 166 of April 30, 2004, with
-                      subsequent amendments and additions
-                    </h5>
-                    <h5>
-                      c{")"} Health insurance concluded with private insurance
-                      companies that cover, on the territory of Romania, at
-                      least the risks covered by health insurance in the
-                      Romanian social health insurance system.
-                    </h5>
-                    <h5>
-                      Health insurance taken out for tourist purposes is not
-                      accepted.
-                    </h5>
-                  </h4>
-                </div>
+              <h2>How to apply online:</h2>
+              <div style={{ border: "1px solid black" }}>
+                <h5>
+                  1. Click{" "}
+                  <a
+                    href="https://portaligi.mai.gov.ro/portaligi/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span>HERE</span>
+                  </a>{" "}
+                  to open the IGI portal.
+                </h5>
               </div>
 
-              <div className={applyOnline === "nonUE" ? "" : "hidden-element"}>
-                <div style={{ border: "1px solid black" }}>
-                  <h4>
-                    Border crossing document (passport, travel document, etc.) -
-                    original and copy
-                  </h4>
+              <div style={{ border: "1px solid black" }}>
+                <h5>
+                  2. Click on the "settings" button in the top right corner and
+                  set the display language to English.
+                </h5>
+              </div>
 
-                  <div style={{ border: "1px solid black" }}>
-                    <h4>Copy of the study visa</h4>
-                  </div>
-                </div>
+              <div style={{ border: "1px solid black" }}>
+                <h5>
+                  3. Click on the "Registration" button. Create an account by
+                  filling in your first name, last name, an email address you
+                  wish to associate with your IGI account, and also a password.
+                </h5>
+              </div>
 
-                <div style={{ border: "1px solid black" }}>
-                  <h4>
-                    Copy of the last entrance to Romania (the stamp that shows
-                    when you last entered Romania)
-                  </h4>
-                </div>
+              <div style={{ border: "1px solid black" }}>
+                <h5>
+                  4. Check your email inbox for the account activation email
+                  from IGI. Click on the link provided in that email.
+                </h5>
+              </div>
 
-                <div style={{ border: "1px solid black" }}>
-                  <h4>Letter of acceptance - original and copy</h4>
-                </div>
+              <div style={{ border: "1px solid black" }}>
+                <h5>
+                  5. Log in to your IGI account by entering the email address
+                  and password you chose when creating the account.
+                </h5>
+              </div>
 
-                <div style={{ border: "1px solid black" }}>
-                  <h4>
-                    Certificate from the educational institution proving that
-                    you are enrolled to study - original and copy
-                  </h4>
-                </div>
+              <div style={{ border: "1px solid black" }}>
+                <h5>
+                  6. Once logged in, click on the button with a person's face
+                  icon. This should open several sub-buttons. Click on the
+                  "Profiles" button.
+                </h5>
+              </div>
 
-                <div style={{ border: "1px solid black" }}>
-                  <h4>Rental contract for one year - original and copy</h4>
-                </div>
+              <div style={{ border: "1px solid black" }}>
+                <h5>
+                  7. Now click on the "Add Profile" button and carefully fill
+                  out your profile. Through this profile, you will be able to
+                  make requests for permits or registration certificates.
+                </h5>
+              </div>
 
-                <div style={{ border: "1px solid black" }}>
-                  <h4>
-                    Medical certificate from the university doctor or any other
-                    doctor in Romania stating that you do not suffer from any
-                    conditions that endanger the public health - original and
-                    copy
-                  </h4>
-                </div>
+              <div style={{ border: "1px solid black" }}>
+                <h5>
+                  8. After successfully saving and creating your profile, click
+                  again on the button with the person's face icon, but this time
+                  select "Apply Online" from the sub-options. Now click on the
+                  "Add Request" button under the site header.
+                </h5>
+              </div>
 
-                <div style={{ border: "1px solid black" }}>
-                  <h4>
-                    Proof of means of support amounting to at least the minimum
-                    gross salary per country guaranteed in payment for at least
-                    six months (As of now, a bank statement with a balance of
-                    19800 lei or 4000 euros is required.)
-                  </h4>
-                </div>
+              <div style={{ border: "1px solid black" }}>
+                <h5>
+                  9. Select your profile and choose "Issuance of the permanent
+                  residence card for EU citizens" if you are a citizen from the
+                  EU/EEA/Swiss Confederation or "Extension of the stay right for
+                  studies" if you are a citizen from a Non-EU Country
+                </h5>
+              </div>
 
-                <div style={{ border: "1px solid black" }}>
-                  <h4>Fees -</h4>
-                  <h4>
-                    a. Consular fee - 597 lei (the equivalent of 120 euros)
-                  </h4>
-                  <h4>
-                    b. Residence permit (card) fee - 259 lei -to be paid in CEC
-                    BANK
-                  </h4>
-                </div>
+              <div style={{ border: "1px solid black" }}>
+                <h5>
+                  10. Carefully fill in all the required information. When you
+                  reach the document upload section, carefully upload all the
+                  required documents. You can find the necessary documents in
+                  the "Required Documents" sub-option under the "Legal Residence
+                  in Romania" section. For processing any PDFs, you can use the
+                  website https://pdfresizer.com/.
+                </h5>
+              </div>
 
-                <div style={{ border: "1px solid black" }}>
-                  <h4>
-                    Students who have reached the age of 26 are required to have
-                    social health insurance: First, you should go to “Casa de
-                    Asigurari de Sanatate Bucuresti”-C.A.S.M.B. and obtain the
-                    quality of being insured.
-                  </h4>
+              <div style={{ border: "1px solid black" }}>
+                <h5>
+                  11. Once you have filled in all the fields and uploaded all
+                  the documents, click on the "Save & Send" button to submit the
+                  request. If you only want to save the request without
+                  submitting it yet, to avoid losing your progress, click on the
+                  "Save" button. All requests will be accessible under "Apply
+                  Online".
+                </h5>
+              </div>
 
-                  <h4>
-                    Those who have turned 26 years old must provide proof of
-                    medical insurance as follows:
-                  </h4>
-                  <h5>
-                    If they have not had a residence permit before, they can
-                    provide proof of private medical insurance.
-                  </h5>
-                  <h5>
-                    If they have had a residence permit before, they must pay
-                    1800 lei to ANAF for medical insurance.
-                  </h5>
-                </div>
+              <div style={{ border: "1px solid black" }}>
+                <h5>
+                  12. You should now receive a confirmation email of the
+                  submission of your request, and after a few days, an email
+                  informing you of the date and time you need to physically
+                  present yourself with all the original and copied documents.
+                  You will also need to have a printed request, which will be
+                  automatically generated by the portal. To obtain this request,
+                  you need to go to "Apply Online". Then you will need to click
+                  on your request and press the "Print" button.
+                </h5>
               </div>
             </div>
           )}
@@ -1417,6 +1373,210 @@ export default function DisplayText({
                 advisable to carefully review the instructions provided by the
                 dormitory you're interested in and to follow them accordingly.
               </h3>
+            </div>
+          )}
+
+        {selectedSubOption.subOptionKey === "sub1" &&
+          selectedSubOption.parentTitle === "Student Fees" && (
+            <div>
+              <h2>Student Fees</h2>
+              <h3>
+                Citizens from states requiring a study visa (check Obtain
+                Romanian Entry Visa-{">"}Find out if you require entry visa)
+                will be required to pay the full tuition fees(8,500.00 €) in
+                order to obtain the study visa. Conversely, citizens from
+                countries not requiring a study visa (mostly those from EU
+                countries) can pay in installments as follows:
+              </h3>
+              <h4>
+                1st Installment: 2,125.00 € on 15.07.2024 for the students
+                enrolled in Sesssion I and 10.09.2024 for the students enrolled
+                in Session II
+              </h4>
+              <h4>2nd Installment: 2,125.00 € on 15.09.2024</h4>
+              <h4>3rd Installment: 2,125.00 € on 01.03.2025</h4>
+              <h4>4th Installment: 2,125.00 € on 01.05.2025</h4>
+            </div>
+          )}
+
+        {selectedSubOption.subOptionKey === "sub1" &&
+          selectedSubOption.parentTitle === "What to do in Bucharest" && (
+            <div>
+              <h2>What to do in Bucharest</h2>
+
+              <h3>
+                Here you can see a list of some of the attractions you can visit
+                in Bucharest.
+              </h3>
+
+              <div style={{ border: "1px solid black", padding: "10px" }}>
+                <h3>Palace of the Parliament</h3>
+                <h4>
+                  The largest administrative building in Europe and one of the
+                  largest buildings in the world, built during Nicolae
+                  Ceaușescu's regime. Guided tours offer a fascinating insight
+                  into its history and architecture.
+                </h4>
+              </div>
+
+              <div style={{ border: "1px solid black", padding: "10px" }}>
+                <h3>National Military Circle</h3>
+                <h4>
+                  An imposing building located in the city center, representing
+                  one of the most important symbols of Bucharest. It's an ideal
+                  place to admire the architecture and better understand
+                  Romania's military history.
+                </h4>
+              </div>
+
+              <div style={{ border: "1px solid black", padding: "10px" }}>
+                <h3>Bellu Cemetery</h3>
+                <h4>
+                  One of the largest and oldest cemeteries in Bucharest, hosting
+                  the graves of prominent figures from Romania's history and
+                  culture. It's a fascinating place to discover the stories
+                  behind the graves and to observe their sculptures and
+                  architecture.
+                </h4>
+              </div>
+
+              <div style={{ border: "1px solid black", padding: "10px" }}>
+                <h3>National Museum of Art of Romania</h3>
+                <h4>
+                  Located in the Royal Palace near Revolution Square, the museum
+                  houses an impressive collection of Romanian and European art,
+                  including significant works by famous artists such as
+                  Brâncuși, Grigorescu, and El Greco.
+                </h4>
+              </div>
+
+              <div style={{ border: "1px solid black", padding: "10px" }}>
+                <h3>Union Square and the Old Town</h3>
+                <h4>
+                  A vibrant area with pedestrian streets, terraces, restaurants,
+                  and shops, where numerous historical monuments and old
+                  churches can be found. It's the ideal place to explore the
+                  authentic atmosphere of Bucharest and enjoy traditional
+                  Romanian cuisine.
+                </h4>
+              </div>
+
+              <div style={{ border: "1px solid black", padding: "10px" }}>
+                <h3>Herastrau Park</h3>
+                <h4>
+                  The largest park in Bucharest, offering a relaxing oasis in
+                  the midst of the city bustle. Visitors can take boat rides on
+                  Herastrau Lake, rent bicycles, or explore the Japanese Garden.
+                </h4>
+              </div>
+
+              <div style={{ border: "1px solid black", padding: "10px" }}>
+                <h3>Romanian Athenaeum</h3>
+                <h4>
+                  One of the most renowned cultural buildings in Bucharest, with
+                  impressive architecture and a unique concert hall. Classical
+                  music concerts and other cultural events are organized here.
+                </h4>
+              </div>
+
+              <div style={{ border: "1px solid black", padding: "10px" }}>
+                <h3>Romanian Peasant Museum</h3>
+                <h4>
+                  A museum dedicated to Romanian folk culture and traditions,
+                  with exhibitions on traditional costumes, rural architecture,
+                  traditional crafts, and household objects.
+                </h4>
+              </div>
+
+              <div style={{ border: "1px solid black", padding: "10px" }}>
+                <h3>Lipscani Quarter</h3>
+                <h4>
+                  A historic area in the Old Town of Bucharest, known for its
+                  narrow, charming streets filled with restaurants, bars, art
+                  galleries, and souvenir shops.
+                </h4>
+              </div>
+
+              <div style={{ border: "1px solid black", padding: "10px" }}>
+                <h3>National Museum of Romanian History</h3>
+                <h4>
+                  An impressive museum housing vast collections of historical
+                  artifacts, including objects from ancient civilizations to
+                  modern Romania.
+                </h4>
+              </div>
+
+              <div style={{ border: "1px solid black", padding: "10px" }}>
+                <h3>Macca-Vilacrosse Passage</h3>
+                <h4>
+                  A covered passage with beautiful architecture and pleasant
+                  terraces, located in the city center. It's a popular spot to
+                  enjoy a coffee or admire the period architecture.
+                </h4>
+              </div>
+
+              <div style={{ border: "1px solid black", padding: "10px" }}>
+                <h3>Dimitrie Brândză Botanical Garden</h3>
+                <h4>
+                  A green oasis in the heart of the city, hosting an impressive
+                  variety of plants and flowers, as well as picturesque alleys
+                  for relaxing walks.
+                </h4>
+              </div>
+
+              <div style={{ border: "1px solid black", padding: "10px" }}>
+                <h3>George Enescu National Museum</h3>
+                <h4>
+                  An institution dedicated to the famous Romanian composer
+                  George Enescu, where visitors can discover permanent and
+                  temporary exhibitions about his life and musical creations.
+                </h4>
+              </div>
+
+              <div style={{ border: "1px solid black", padding: "10px" }}>
+                <h3>Triumphal Arch</h3>
+                <h4>
+                  A replica of the famous Arc de Triomphe in Paris, located in a
+                  central point of the city and offering a panoramic view of
+                  Bucharest from its upper platform.
+                </h4>
+              </div>
+
+              <div style={{ border: "1px solid black", padding: "10px" }}>
+                <h3>Victory Square and Victoria Palace</h3>
+                <h4>
+                  One of the most important road and political junctions in
+                  Bucharest, surrounded by historical buildings, government
+                  offices, and Kiseleff Park.
+                </h4>
+              </div>
+
+              <div style={{ border: "1px solid black", padding: "10px" }}>
+                <h3>Cișmigiu Park</h3>
+                <h4>
+                  Another beautiful park in central Bucharest, offering shady
+                  alleys, boating lakes, playgrounds, and many other facilities
+                  for outdoor recreation.
+                </h4>
+              </div>
+
+              <div style={{ border: "1px solid black", padding: "10px" }}>
+                <h3>Bucharest National Theatre</h3>
+                <h4>
+                  A prestigious cultural institution with a rich history and
+                  impressive architecture, where theater, opera, and ballet
+                  performances can be seen.
+                </h4>
+              </div>
+
+              <div style={{ border: "1px solid black", padding: "10px" }}>
+                <h3>Museum of Contemporary Art (MNAC)</h3>
+                <h4>
+                  Located in the Palace of Parliament, this museum hosts an
+                  impressive collection of Romanian and international
+                  contemporary art.
+                </h4>
+              </div>
             </div>
           )}
       </div>
