@@ -1581,24 +1581,16 @@ export default function DisplayText({
           )}
 
         {selectedSubOption.subOptionKey === "sub2" &&
-          selectedSubOption.parentTitle ===
-            "Admission Process for English Programs" && (
+          selectedSubOption.parentTitle === "What to do in Bucharest" && (
             <div>
-              <h2>Admission calendar:</h2>
-              <div style={{ border: "1px solid black" }}>
-                <h3>Session I:</h3>
-                <h4> Online registration:</h4>
-                <h5> 02.05.2023-30.06.2023</h5>
-                <h4>File competition results:</h4>
-                <h5>10.07.2023</h5>
-              </div>
-              <div style={{ border: "1px solid black" }}>
-                <h3>Session II:</h3>
-                <h4> Online registration:</h4>
-                <h5> 01.08.2023-25.08.2023</h5>
-                <h4>File competition results:</h4>
-                <h5>04.09.2023</h5>
-              </div>
+              <h2>Parties and Events</h2>
+              <h3>
+                To find information about parties and events happening in
+                Bucharest, you can access websites like:
+                https://zilesinopti.ro/bucuresti/. Additionally, you can contact
+                the SSMB department for more details, tips, and great places
+                where you can hang out with friends!
+              </h3>
             </div>
           )}
       </div>
