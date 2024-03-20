@@ -10,7 +10,7 @@ export default function DisplayText({
 }) {
   const [admissionDocuments, setAdmissionDocuments] = useState(null);
   const [permitDocuments, setPermitDocuments] = useState(null);
-  const [applyOnline, setApplyOnline] = useState(null);
+  // const [applyOnline, setApplyOnline] = useState(null);
   const [transportInfo, setTransportInfo] = useState(1);
 
   return (
