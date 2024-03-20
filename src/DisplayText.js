@@ -550,6 +550,192 @@ export default function DisplayText({
             <SelectCountry />
           )}
 
+        {selectedSubOption.subOptionKey === "sub2" &&
+          selectedSubOption.parentTitle === "Obtaining Romanian Entry Visa" && (
+            <div>
+              <h2>Documents needed for the visa:</h2>
+              <div style={{ border: "1px solid black" }}>
+                <h3>PROOF OF ACCEPTANCE FOR STUDIES</h3>
+                <h4>
+                  Proof of acceptance for studies from the Romanian Ministry of
+                  Education, attesting that the visa applicant will attend a
+                  full-time course of study at a state or private higher
+                  education institution, accredited or provisionally authorized
+                  according to Law
+                </h4>
+              </div>
+              <div style={{ border: "1px solid black" }}>
+                <h3>PROOF OF PAYMENT OF FEES</h3>
+                <h4>
+                  Proof of payment of the tuition fee for at least one academic
+                  year
+                </h4>
+              </div>
+              <div style={{ border: "1px solid black" }}>
+                <h3>MEANS OF SUPPORT</h3>
+                <h4>
+                  Proof of means of support at the level of the minimum
+                  guaranteed gross salary, monthly, for the entire period
+                  specified in the visa
+                </h4>
+              </div>
+              <div style={{ border: "1px solid black" }}>
+                <h3>CRIMINAL RECORD</h3>
+                <h4>
+                  Criminal record or any other document of equivalent legal
+                  value
+                </h4>
+              </div>
+              <div style={{ border: "1px solid black" }}>
+                <h3>TRAVEL MEDICAL INSURANCE</h3>
+                <h4>
+                  Travel medical insurance that covers the entire duration of
+                  the requested period of stay
+                </h4>
+              </div>
+              <div style={{ border: "1px solid black" }}>
+                <h3>CONSENT OF THE LEGAL REPRESENTATIVE</h3>
+                <h4>
+                  If you are underage, the consent of your parents or of your
+                  legal guardian for the purpose of residing in Romania for
+                  studies
+                </h4>
+              </div>
+
+              <div style={{ border: "1px solid black", padding: "2vh" }}>
+                <h3>ACCOMMODATION</h3>
+                <h4>Proof of accommodation</h4>
+              </div>
+
+              <div style={{ border: "1px solid black", padding: "2vh" }}>
+                <h3>
+                  PROOF OF KNOWLEDGE OF THE LANGUAGE OF THE STUDY PROGRAMME
+                </h3>
+                <h4>
+                  Proof of knowledge of the language of the study programme to
+                  be followed, with the exception of the preparatory year of
+                  Romanian language for foreign citizens
+                </h4>
+              </div>
+            </div>
+          )}
+
+        {selectedSubOption.subOptionKey === "sub3" &&
+          selectedSubOption.parentTitle === "Obtaining Romanian Entry Visa" && (
+            <div>
+              <div>
+                <h2>Steps to apply for the visa:</h2>
+                <div style={{ border: "1px solid black", padding: "2vh" }}>
+                  <h3>Step 1: Access the visa application website</h3>
+                  <h4>
+                    Click on the provided link to access the visa application
+                    website of the Romanian Ministry of Internal Affairs.
+                  </h4>
+                </div>
+                <div style={{ border: "1px solid black", padding: "2vh" }}>
+                  <h3>Step 2: Select the English language</h3>
+                  <h4>
+                    Once on the site, select the English language by clicking on
+                    the button in the top right corner.
+                  </h4>
+                </div>
+                <div style={{ border: "1px solid black", padding: "2vh" }}>
+                  <h3>Step 3: Begin the application process</h3>
+                  <h4>
+                    Click on the "Apply for a visa" button and select the
+                    "Apply" sub-button.
+                  </h4>
+                </div>
+                <div style={{ border: "1px solid black", padding: "2vh" }}>
+                  <h3>Step 4: Accept terms and conditions</h3>
+                  <h4>
+                    Check the box to confirm acceptance of the terms and
+                    conditions, then proceed by clicking on the "Next" button.
+                  </h4>
+                </div>
+                <div style={{ border: "1px solid black", padding: "2vh" }}>
+                  <h3>Step 5: Provide personal information</h3>
+                  <h4>
+                    Enter your email address and choose a password. Also,
+                    accurately transcribe the text from the image to verify you
+                    are not a robot.
+                  </h4>
+                </div>
+                <div style={{ border: "1px solid black", padding: "2vh" }}>
+                  <h3>Step 6: Verify your file number</h3>
+                  <h4>
+                    Access the email sent to you, containing your file number,
+                    and click on the provided link.
+                  </h4>
+                </div>
+                <div style={{ border: "1px solid black", padding: "2vh" }}>
+                  <h3>Step 7: Log in and access your application</h3>
+                  <h4>
+                    Log in using your file number and password, solve the
+                    captcha, and proceed to the application.
+                  </h4>
+                </div>
+                <div style={{ border: "1px solid black", padding: "2vh" }}>
+                  <h3>Step 8: Update visa application</h3>
+                  <h4>
+                    Enter the application file and click on the "Update visa
+                    application" button.
+                  </h4>
+                </div>
+                <div style={{ border: "1px solid black", padding: "2vh" }}>
+                  <h3>Step 9: Complete application sections</h3>
+                  <h4>
+                    Fill out all sections carefully, ensuring accurate
+                    information. Upload required documents as specified.
+                  </h4>
+                </div>
+                <div style={{ border: "1px solid black", padding: "2vh" }}>
+                  <h3>Step 10: Review application summary</h3>
+                  <h4>
+                    Check if all data is entered correctly. If necessary, click
+                    on "Update visa application" to make modifications.
+                  </h4>
+                </div>
+                <div style={{ border: "1px solid black", padding: "2vh" }}>
+                  <h3>Step 11: Download visa application file</h3>
+                  <h4>
+                    Download the visa application file in ZIP format. Access and
+                    print the PDF named Form_Visa_D for future reference.
+                  </h4>
+                </div>
+                <div style={{ border: "1px solid black", padding: "2vh" }}>
+                  <h3>Step 12: Submit application</h3>
+                  <h4>
+                    Click on the "Send file" button to submit your visa
+                    application file.
+                  </h4>
+                </div>
+                <div style={{ border: "1px solid black", padding: "2vh" }}>
+                  <h3>Step 13: Await validation</h3>
+                  <h4>
+                    Await confirmation email regarding the validation of your
+                    visa application file.
+                  </h4>
+                </div>
+                <div style={{ border: "1px solid black", padding: "2vh" }}>
+                  <h3>Step 14: Schedule interview</h3>
+                  <h4>
+                    Once validated, schedule an interview appointment at the
+                    Romanian embassy in your country through the provided
+                    interface.
+                  </h4>
+                </div>
+                <div style={{ border: "1px solid black", padding: "2vh" }}>
+                  <h3>Step 15: Attend interview</h3>
+                  <h4>
+                    Attend the scheduled interview at the embassy as per your
+                    appointment.
+                  </h4>
+                </div>
+              </div>
+            </div>
+          )}
+
         {selectedSubOption.subOptionKey === "sub1" &&
           selectedSubOption.parentTitle === "Legal Residence in Romania" && (
             <div>

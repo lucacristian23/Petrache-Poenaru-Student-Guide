@@ -38,9 +38,8 @@ const infoData = [
       "Comprehensive guide to obtaining a Romanian visa, covering application procedures, required documentation, and essential steps for a successful application.",
     suboptions: [
       { key: "sub1", value: "Find out if you require entry visa" }, // form cu fiecare tara
-      { key: "sub2", value: "The process of getting the visa" },
-      { key: "sub3", value: "Documents needed for the visa" },
-      { key: "sub4", value: "How to apply online for the visa" },
+      { key: "sub2", value: "Documents needed for the visa" },
+      { key: "sub3", value: "How to apply online for the visa" },
     ],
     image: "/visa.jpg",
   },
@@ -60,7 +59,8 @@ const infoData = [
   },
   {
     title: "Legal Residence in Romania",
-    description: "Take a look on how to navigate the Bucharest like a local!",
+    description:
+      "Discover all the information you need to obtain legal residency in Romania.",
     suboptions: [
       { key: "sub1", value: "General informations" },
       {
@@ -101,7 +101,7 @@ const infoData = [
   {
     title: "What to do in Bucharest",
     description:
-      "Explore what you can visit and what activities you can do in Bucharest!",
+      "Discover the sights to see and activities to enjoy in Bucharest!",
     suboptions: [
       { key: "sub1", value: "Tourist Attractions" },
       { key: "sub2", value: "Eveniments and Parties" },
