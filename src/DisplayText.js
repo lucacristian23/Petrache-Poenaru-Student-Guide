@@ -968,7 +968,7 @@ export default function DisplayText({
                   </h4>
                   <div>
                     <img
-                      src="/transporta4.jpeg"
+                      src="/trasporta44.jpeg"
                       alt="da"
                       style={{ maxWidth: "70%", height: "auto" }}
                     />
