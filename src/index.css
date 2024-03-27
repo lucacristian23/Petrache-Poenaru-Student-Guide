@@ -275,6 +275,98 @@ code {
   color: #2c5777;
 }
 
+@media screen and (min-width: 1280px) {
+  .option-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh; /* Adjust the gap between Option components */
+    border: 0.25vh solid #ccc; /* Add border with a color of your choice */
+    padding: 2vh; /* Add padding to create space between border and content */
+    padding-left: 40vh;
+    padding-right: 40vh;
+  }
+
+  .subOption {
+    position: relative; /* Position the option container relative */
+    border: 0.25vh solid /*#144072*/ #11304a; /* Coral border color */
+    padding: 0vh; /* Add padding to create space between border and content */
+    height: 3vh;
+    margin-left: 0; /* Align the subOptions to the absolute left margin */
+    border-radius: 16px;
+    background-color:/* #1e3350 */ #1f3451;
+    width: 99%;
+  }
+
+  .sub-options-container {
+    display: flex;
+    position: relative; /* Position the container relative to its parent option */
+    width: 68%; /* Make the container full width */
+
+    margin-left: auto;
+    border-radius: 4px; /* Make the borders slightly rounded */
+    border: 0.25vh solid /*#16253c*/ #131761; /* Coral border color */
+    margin-top: 0; /* Adjust the margin-top to create space between options */
+    background-color: /*#1a2b45*/ #203554;
+    flex-direction: column;
+    gap: 0vh; /* Adjust the gap between Option components */
+    padding-left: 0vh; /* Adjust padding to align with left border */
+  }
+
+  .option {
+    display: flex;
+    align-items: center;
+    border: 0.25vh solid #0c1c34;
+    padding: 0 20px; /* Adjust padding as needed */
+    height: 8vh;
+    border-radius: 16px;
+    background-color: #1b2b43;
+    position: relative; /* Position the container relative */
+  }
+
+  .option img {
+    border: 0.25vh solid red;
+    box-sizing: border-box;
+    width: 12.5vh; /* Fixed width for the image */
+    height: auto;
+    position: absolute; /* Position the image absolute */
+    left: 0; /* Align the left border of the image with the left border of the container */
+  }
+
+  .textContainer {
+    position: absolute; /* Position the text container absolute */
+    left: 13.2vh; /* Adjust to align with the image */
+    top: 0; /* Align with the top of the container */
+  }
+
+  .optionTitle,
+  .optionDescription {
+    margin: 0;
+    color: white;
+
+    position: relative; /* Position both the title and description relative */
+  }
+
+  .optionTitle {
+    top: 0.27vh; /* Adjust the top position to lift up the title */
+    font-size: 1.8vh;
+  }
+
+  .optionDescription {
+    top: 0.27vh; /* Adjust the top position to lift up the description */
+    font-size: 1.6vh;
+    line-height: 1.2;
+  }
+
+  .subOptionTitle {
+    margin: 0;
+    color: white;
+    font-size: 1.6vh;
+    position: relative; /* Position both the title and description relative */
+    top: 0.3vh; /* Adjust the top position to lift up the title */
+    left: 1.6vh;
+  }
+}
+
 .hidden-element {
   display: none;
 }
