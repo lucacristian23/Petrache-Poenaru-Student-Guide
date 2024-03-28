@@ -10,7 +10,6 @@ export default function DisplayText({
 }) {
   const [admissionDocuments, setAdmissionDocuments] = useState(null);
   const [permitDocuments, setPermitDocuments] = useState(null);
-  // const [applyOnline, setApplyOnline] = useState(null);
   const [transportInfo, setTransportInfo] = useState(1);
 
   return (
@@ -24,16 +23,16 @@ export default function DisplayText({
               <div style={{ border: "1px solid black" }}>
                 <h3>Session I:</h3>
                 <h4> Online registration:</h4>
-                <h5> 02.05.2023-30.06.2023</h5>
+                <h5> 02.05.2024-30.06.2024</h5>
                 <h4>File competition results:</h4>
-                <h5>10.07.2023</h5>
+                <h5>10.07.2024</h5>
               </div>
               <div style={{ border: "1px solid black" }}>
                 <h3>Session II:</h3>
                 <h4> Online registration:</h4>
-                <h5> 01.08.2023-25.08.2023</h5>
+                <h5> 01.08.2024-25.08.2024</h5>
                 <h4>File competition results:</h4>
-                <h5>04.09.2023</h5>
+                <h5>04.09.2024</h5>
               </div>
             </div>
           )}
@@ -56,88 +55,6 @@ export default function DisplayText({
                 <h5>
                   2. Documents translated into Romanian from an intermediate
                   language must also be accompanied by the original version.
-                </h5>
-              </div>
-
-              <div style={{ border: "1px solid black" }}>
-                <h5>
-                  3. The academic documents must be apostilled or legalized,
-                  depending on the issuing country. More information can be
-                  found here:{" "}
-                  <a
-                    href="https://cnred.edu.ro/lista-statelor-pentru-care-se-solicita-apostilarea-sau-
-                    supralegalizarea/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    https://cnred.edu.ro/lista-statelor-pentru-care-se-solicita-apostilarea-sau-
-                    supralegalizarea/
-                  </a>{" "}
-                </h5>
-              </div>
-
-              <div style={{ border: "1px solid black" }}>
-                <h5>
-                  4. The validation of study documents with the Hague Apostille
-                  is carried out by the competent authorities in the issuing
-                  countries.{" "}
-                  <a
-                    href="https://www.hcch.net/en/instruments/conventions/authorities1/?cid=41"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    https://www.hcch.net/en/instruments/conventions/authorities1/?cid=41
-                  </a>{" "}
-                </h5>
-              </div>
-
-              <div style={{ border: "1px solid black" }}>
-                <h5>5. The legalization of study documents is applied by:</h5>
-                <h5>
-                  a{")"} The Ministry of Foreign Affairs of the issuing country
-                  and the Embassy/Consular Office of Romania in that country OR
-                </h5>
-                <h5>
-                  b{")"} The Ministry of Foreign Affairs of the issuing country
-                  and its Embassy/Consular Office in Romania, as well as the
-                  Ministry of Foreign Affairs of Romania OR
-                </h5>
-                <h5>
-                  c{")"} The Ministry of Education and the Ministry of Foreign
-                  Affairs of the issuing country for countries where there are
-                  no diplomatic missions of Romania or which do not have
-                  diplomatic missions in Romania.
-                </h5>
-              </div>
-
-              <div style={{ border: "1px solid black" }}>
-                <h5>
-                  6. If the candidate's name on the high school diploma is not
-                  identical to the name on their birth certificate or passport,
-                  the candidate is required to submit a notarized explanatory
-                  note, accompanied by a translation into Romanian, legalized
-                  (by a notary).
-                </h5>
-              </div>
-
-              <div style={{ border: "1px solid black" }}>
-                <h5>
-                  7. Citizens holding dual citizenship (Romanian and a NON-EU
-                  state) will upload to the admission platform a notarized
-                  declaration attesting that they opt, on their own
-                  responsibility, for self-funded studies in foreign currency.
-                  The document will be accompanied by a translation into
-                  Romanian, legalized (by a notary).
-                </h5>
-              </div>
-
-              <div style={{ border: "1px solid black" }}>
-                <h5>
-                  8.Citizens who upload documents that contain discrepancies
-                  regarding the name listed in them will upload to the platform
-                  a notarized affidavit authenticated by a notary. The document
-                  will be accompanied by a translation into Romanian, legalized
-                  (by a notary).
                 </h5>
               </div>
             </div>
@@ -171,60 +88,6 @@ export default function DisplayText({
                     according to the Common European Framework of Reference for
                     Languages.
                   </h4>
-                  <h5>
-                    The language competence of candidates must be proven,
-                    obligatorily, by the existence of supporting documents in
-                    the application folder, according to one of the four
-                    conditions below:
-                  </h5>
-                  <h5>
-                    a{")"}By submitting to the application folder a language
-                    proficiency certificate, internationally recognized, not
-                    older than 2 years (see exceptions in{" "}
-                    <a
-                      href="https://umfcd.ro/wp-content/uploads/2021/STUDENTI_STRAINI/ANEXA-3.pdf"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      ANNEX 3
-                    </a>{" "}
-                    ). The certificates must explicitly state the level of
-                    language proficiency (minimum level B2, according to the
-                    Common European Framework of Reference for Languages -{" "}
-                    <a
-                      href="https://umfcd.ro/wp-content/uploads/2021/STUDENTI_STRAINI/ANEXA-3.pdf"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      ANNEX 3
-                    </a>{" "}
-                    ).
-                  </h5>
-
-                  <h5>
-                    b{")"}Citizens who have completed high school studies in an
-                    educational institution where the language of instruction is
-                    English will present a certificate to this effect, issued by
-                    the high school.
-                  </h5>
-
-                  <h5>
-                    c{")"}Citizens who have achieved at least a B2 grade in
-                    English, according to the Common European Framework of
-                    Reference for Languages, in the baccalaureate exam will
-                    present the document itself.
-                  </h5>
-
-                  <h5>
-                    d{")"}Taking an English language exam at the Department of
-                    Modern Languages, Faculty of Medicine-UMFCD. For taking this
-                    exam, a fee of €400 (NON-EU countries) / the equivalent in
-                    lei of €400 (EU countries) must be paid. Exam registration
-                    is done by sending an email accompanied by a copy of the
-                    passport/ID and proof of payment of the exam fee to the
-                    address admission@umfcd.ro Exam appointments can only be
-                    made during the admission session and according to Annex 8.
-                  </h5>
 
                   <div style={{ border: "1px solid black" }}>
                     <h4>
@@ -252,7 +115,7 @@ export default function DisplayText({
                       </a>{" "}
                       to see which is applicable in your case. The candidates
                       who have passed the Baccalaureate examination in the
-                      sessions corresponding to the school year 2022-2023 may
+                      sessions corresponding to the school year 2024-2025 may
                       submit, instead of the Baccalaureate / High-School
                       Diploma, a certificate issued by the high school,
                       obligatorily specifying the grade point averages obtained
@@ -342,60 +205,6 @@ export default function DisplayText({
                     according to the Common European Framework of Reference for
                     Languages.
                   </h4>
-                  <h5>
-                    The language competence of candidates must be proven,
-                    obligatorily, by the existence of supporting documents in
-                    the application folder, according to one of the four
-                    conditions below:
-                  </h5>
-                  <h5>
-                    a{")"}By submitting to the application folder a language
-                    proficiency certificate, internationally recognized, not
-                    older than 2 years (see exceptions in{" "}
-                    <a
-                      href="https://umfcd.ro/wp-content/uploads/2021/STUDENTI_STRAINI/ANEXA-3.pdf"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      ANNEX 3
-                    </a>{" "}
-                    ). The certificates must explicitly state the level of
-                    language proficiency (minimum level B2, according to the
-                    Common European Framework of Reference for Languages -{" "}
-                    <a
-                      href="https://umfcd.ro/wp-content/uploads/2021/STUDENTI_STRAINI/ANEXA-3.pdf"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      ANNEX 3
-                    </a>{" "}
-                    ).
-                  </h5>
-
-                  <h5>
-                    b{")"}Citizens who have completed high school studies in an
-                    educational institution where the language of instruction is
-                    English will present a certificate to this effect, issued by
-                    the high school.
-                  </h5>
-
-                  <h5>
-                    c{")"}Citizens who have achieved at least a B2 grade in
-                    English, according to the Common European Framework of
-                    Reference for Languages, in the baccalaureate exam will
-                    present the document itself.
-                  </h5>
-
-                  <h5>
-                    d{")"}Taking an English language exam at the Department of
-                    Modern Languages, Faculty of Medicine-UMFCD. For taking this
-                    exam, a fee of €400 (NON-EU countries) / the equivalent in
-                    lei of €400 (EU countries) must be paid. Exam registration
-                    is done by sending an email accompanied by a copy of the
-                    passport/ID and proof of payment of the exam fee to the
-                    address admission@umfcd.ro Exam appointments can only be
-                    made during the admission session and according to Annex 8.
-                  </h5>
 
                   <div style={{ border: "1px solid black" }}>
                     <h4>
@@ -423,7 +232,7 @@ export default function DisplayText({
                       </a>{" "}
                       to see which is applicable in your case. The candidates
                       who have passed the Baccalaureate examination in the
-                      sessions corresponding to the school year 2022-2023 may
+                      sessions corresponding to the school year 2024-2025 may
                       submit, instead of the Baccalaureate / High-School
                       Diploma, a certificate issued by the high school,
                       obligatorily specifying the grade point averages obtained

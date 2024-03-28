@@ -1,18 +1,5 @@
 import "./index.css";
-/*
-export default function Option({ optionObject }) {
-  return (
-    <div className="option">
-      <ul>
-        <li className="list">
-          <img src="pizzas/prosciutto.jpg" alt="" />
-          {optionObject.name}
-        </li>
-      </ul>
-    </div>
-  );
-}
-*/
+
 export default function Option({ display, setDisplay, infoObj }) {
   return (
     <div className="option" onClick={(e) => setDisplay(!display)}>
@@ -36,8 +23,3 @@ export default function Option({ display, setDisplay, infoObj }) {
     </div>
   );
 }
-/*
-<img src="/HAI.png" alt="da" />
-<img src="/test.png" alt="da" />
-<img src="/test1.jpg" alt="da" />
-*/

@@ -1,20 +1,7 @@
 import { useState } from "react";
 import OptionAndSubOptionContainer from "./OptionAndSubOptionContainer.js";
 import DisplayText from "./DisplayText";
-/*
-export default function OptionList() {
-  return (
-    <div>
-      <ul>
-        {optionData.map((data, index) => {
-          console.log(data);
-          return <Option key={index} optionObject={data} />;
-        })}
-      </ul>
-    </div>
-  );
-}
-*/
+
 const infoData = [
   {
     title: "Admission Process for English Programs",
